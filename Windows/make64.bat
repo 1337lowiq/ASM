@@ -6,6 +6,7 @@ set /p prog=[+] Program Name :
 %prog%.asm /link /subsystem:console ^
 /defaultlib:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64\ntdll.lib" ^
 /defaultlib:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64\kernel32.lib" ^
+/defaultlib:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64\user32.lib" ^
 /entry:Start ^
 /out:%prog%.exe ^
 /RELEASE
